@@ -1,26 +1,34 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Features from './components/Features';
-import Pricing from './components/Pricing';
-import CTA from './components/CTA';
+import Workforce from './components/Workforce';
+import HowItWorks from './components/HowItWorks';
+import Compare from './components/Compare';
+import Advantage from './components/Advantage';
+import Industries from './components/Industries';
+import FAQ from './components/FAQ';
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#f5f0e6] text-neutral-900">
+    <div className="min-h-screen bg-white text-neutral-900">
       <Navbar />
       <main>
         <Hero />
-        <Features />
-        <Pricing />
-        <CTA />
+        <Workforce />
+        <HowItWorks />
+        <Compare />
+        <Advantage />
+        <Industries />
+        <FAQ />
+        <Contact />
       </main>
-      <footer className="border-t border-neutral-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-neutral-600">© {new Date().getFullYear()} BotStaff. All rights reserved.</p>
-          <div className="flex items-center gap-5 text-sm">
-            <a href="#features" className="text-neutral-600 hover:text-neutral-900">Features</a>
-            <a href="#pricing" className="text-neutral-600 hover:text-neutral-900">Pricing</a>
-            <a href="#contact" className="text-neutral-600 hover:text-neutral-900">Contact</a>
+      <footer className="mt-10 bg-gradient-to-r from-[#0b1020] to-[#2a145a] text-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 text-center space-y-3">
+          <div className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-sky-400 via-blue-500 to-violet-500 bg-clip-text text-transparent">BotStaff</div>
+          <p className="text-sm text-white/70">© {new Date().getFullYear()} BotStaff</p>
+          <div className="text-sm text-white/70 space-x-4">
+            <a href="#" className="hover:text-white">Privacy</a>
+            <a href="#" className="hover:text-white">Terms</a>
           </div>
         </div>
       </footer>
